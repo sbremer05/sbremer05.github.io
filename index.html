@@ -1,32 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset = "UTF-8" />
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
-    <title>Sean Bremer</title>
-    <link rel = "stylesheet" href = "style.css" />
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Sean Bremer</title>
+    <link rel = "stylesheet" href = "style.css"/>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href = "https://github.com/sbremer05" target = "_blank" rel = "noopener">GitHub</a></li>
-                <li><a href = "https://www.linkedin.com/in/sean-bremer/" target = "_blank" rel = "noopener">LinkedIn</a></li>
+            <div class = "nav-left">
+                <a href = "#home" class = "brand">Sean Bremer</a>
+            </div>
+            <ul class = "nav-right">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id = "introduction">
-            <h1>Hello, I'm Sean Bremer</h1>
-            <h3>Aspiring Software Engineer</h3>
+        <section id = "home" class = "hero">
+            <img src = "headshot.jpeg" class = "hero-img">
+            <h1>Sean Bremer</h1>
+            <p class = "subtitle">Aspiring Software Engineer</p>
         </section>
 
-        <section id = "projects">
+        <section id = "about" class = "content-block">
+            <h2>About</h2>
+            <p>
+                Hi! I'm Sean, an undergraduate student at the University of Virginia.
+                I'm currently sutdying for a BS in Computer Science with an Applied Mathematics minor,
+                as well as a BA in Economics.
+            </p>
+            <p>
+                I am very passionate about computer science and software engineering.
+                I've loved computer science and programming since my first computer science
+                class in high school. I am intrigued by various aspects of programming, and
+                I love exploring its possibilities with the use of artificial intelligence,
+                and various frameworks. I'm always excited to learn and build new things,
+                utilizing my skills in any way possible.
+            </p>
+        </section>
+
+        <section id = "projects" class = "content-block">
             <h2>Projects</h2>
             <ul>
-                <li><a href = "https://github.com/sbremer05/Agenda" target = "_blank" rel = "noopener">Agenda</a></li> - A Java-based agenda program implementing JavaFX and following a MVC architecture.</li>
+                <la>
+                    <a href = "https://github.com/sbremer05/Agenda" class = "project-link">Agenda</a>
+                    - A Java-based agenda program implementing JavaFX and following a MVC architecture.
+                </la>
             </ul>
         </section>
     </main>
@@ -36,3 +60,42 @@
     </footer>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset = "UTF-8" />-->
+<!--    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />-->
+<!--    <title>Sean Bremer</title>-->
+<!--    <link rel = "stylesheet" href = "style.css" />-->
+<!--</head>-->
+
+<!--<body>-->
+<!--    <header>-->
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a href = "https://github.com/sbremer05" target = "_blank" rel = "noopener">GitHub</a></li>-->
+<!--                <li><a href = "https://www.linkedin.com/in/sean-bremer/" target = "_blank" rel = "noopener">LinkedIn</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </header>-->
+
+<!--    <main>-->
+<!--        <section id = "introduction">-->
+<!--            <h1>Hello, I'm Sean Bremer</h1>-->
+<!--            <h3>Aspiring Software Engineer</h3>-->
+<!--        </section>-->
+
+<!--        <section id = "projects">-->
+<!--            <h2>Projects</h2>-->
+<!--            <ul>-->
+<!--                <li><a href = "https://github.com/sbremer05/Agenda" target = "_blank" rel = "noopener">Agenda</a></li> - A Java-based agenda program implementing JavaFX and following a MVC architecture.</li>-->
+<!--            </ul>-->
+<!--        </section>-->
+<!--    </main>-->
+
+<!--    <footer>-->
+<!--        &copy; 2025 Sean Bremer-->
+<!--    </footer>-->
+<!--</body>-->
+<!--</html>-->
