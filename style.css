@@ -1,10 +1,9 @@
-/* Reset and base*/
+/* Reset & base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,9 +12,7 @@ body {
 }
 
 /* Navbar */
-header {
-    background: #333;
-}
+header { background: #333; }
 nav {
     max-width: 1000px;
     margin: 0 auto;
@@ -23,41 +20,33 @@ nav {
     align-items: center;
     padding: 0.5rem 1rem;
 }
-
 .nav-left .brand {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
-
 .nav-right {
     list-style: none;
     margin-left: auto;
     display: flex;
 }
-
 .nav-right li {
     margin-right: 1rem;
 }
-
 .nav-right a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
+.nav-right a:hover { opacity: 0.8; }
 
-.nav-right a:hover {
-    opacity: 0.8;
-}
-
-/* Hero (Home) */
+/* Hero */
 .hero {
     text-align: center;
     padding: 3rem 1rem;
     background: #fff;
 }
-
 .hero-img {
     width: 150px;
     height: 150px;
@@ -65,16 +54,8 @@ nav {
     object-fit: cover;
     margin-bottom: 1rem;
 }
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    color: #555;
-}
+.hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1.1rem; color: #555; }
 
 /* Content blocks */
 .content-block {
@@ -83,36 +64,19 @@ nav {
     padding: 1rem;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
-.content-block h2 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-.content-block p, .content-block ul {
-    font-size: 1rem;
-    color: #333;
-}
-
-.content-block ul {
-    list-style: disc inside;
-}
-
-.content-block li {
-    margin-bottom: 0.5rem;
-}
-
+.content-block h2 { margin-bottom: 1rem; font-size: 1.8rem; }
+.content-block p,
+.content-block ul { font-size: 1rem; color: #333; }
+.content-block ul { list-style: disc inside; }
+.content-block li { margin-bottom: 0.5rem; }
 .content-block a {
     color: #333;
     font-weight: bold;
     text-decoration: none;
 }
-
-.content-block a:hover {
-    opacity: 0.8;
-}
+.content-block a:hover { opacity: 0.8; }
 
 /* Footer */
 footer {
