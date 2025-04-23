@@ -3,52 +3,75 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sean Bremer</title>
-    <!-- this must point exactly to your CSS file -->
-<!--    <link rel="stylesheet" href="style.css" />-->
+    <title>Sean Bremer | Aspiring Software Engineer</title>
+    <!-- Font Awesome for icons -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-pO1V1u7lJH+1+gZtK4bM4J2Kj+6h5xV+eR6uof+vZrj3lw+ZgVbM+/gN0Y5lKp+/7rFTQk6h7UPG7h1XNp0Ykg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="test.css" />
 </head>
 <body>
 <header>
-    <nav>
-        <div class="nav-left">
-            <!-- brand itself scrolls to #home -->
-            <a href="#home" class="brand">Sean Bremer</a>
-        </div>
-        <ul class="nav-right">
-            <!-- Home is implicit via the brand link -->
+    <nav class="navbar">
+        <a href="#home" class="brand">Sean Bremer</a>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="Sean_Bremer_Resume.pdf" target="_blank">Resume</a></li>
         </ul>
+        <button class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
     </nav>
 </header>
 
 <main>
     <!-- HOME -->
     <section id="home" class="hero">
-        <!-- exactly match your filename: headshot.jpeg -->
         <img src="headshot.jpeg" alt="Sean’s headshot" class="hero-img" />
-        <h1>Sean Bremer</h1>
-        <p class="subtitle">Aspiring Software Engineer</p>
+        <div class="hero-text">
+            <p class="greeting">Hi 👋</p>
+            <h1>I'm Sean Bremer.</h1>
+            <p class="subtitle">
+                Aspiring <span class="highlight">Software Engineer</span>.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com/sbremer05" class="btn btn-github" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/sean-bremer" class="btn btn-linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="Sean_Bremer_Resume.pdf" class="btn btn-resume" target="_blank">
+                    <i class="fas fa-file-alt"></i> Resume
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="content-block">
-        <h2>About</h2>
-        <p>…your about-me text…</p>
+        <h2>About Me</h2>
+        <p>
+            I’m a Computer Science & Economics major at UVA with a minor in Applied Mathematics.
+            I love building web & mobile applications, tackling algorithmic challenges, and exploring
+            new frameworks and AI tools.
+        </p>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="content-block">
         <h2>Projects</h2>
         <ul>
-            <!-- use <li>, not <la> -->
             <li>
-                <a href="https://github.com/sbremer05/Agenda" class="project-link">
-                    Agenda
-                </a>
-                – A Java-based agenda program implementing JavaFX and MVC.
+                <a href="https://github.com/sbremer05/Agenda" target="_blank">Agenda</a>
+                – A JavaFX/MVC agenda application.
             </li>
+            <!-- add more projects here -->
         </ul>
     </section>
 </main>
